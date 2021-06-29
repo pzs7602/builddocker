@@ -3,8 +3,8 @@
 FROM nvcr.io/nvidia/dli/dli-nano-ai:v2.0.1-r32.5.0
 RUN apt-get update && apt-get upgrade -y && apt install python3-pip pkg-config cmake libhdf5-serial-dev hdf5-tools libhdf5-dev zlib1g-dev zip libjpeg8-dev liblapack-dev libblas-dev gfortran libcanberra-gtk-module sudo nano -y
 
-COPY ./CSI-Camera /home/CSI-Camera
-COPY ./tensorrt_demos /home/tensorrt_demos
+#COPY ./CSI-Camera /home/CSI-Camera
+#COPY ./tensorrt_demos /home/tensorrt_demos
 
 WORKDIR /home/CSI-Camera
 RUN pip3 install -U pip
