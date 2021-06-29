@@ -1,3 +1,6 @@
+## README.md
+this dockerfile can be used to build docker image for jetson nano. the image container uses CSI camera to capture video.
+
 ## build docker image
 ```
 sudo docker build -t dli-nano-ai-cam -f camera.Dockerfile
